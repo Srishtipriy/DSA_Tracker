@@ -28,7 +28,7 @@ export default function Dashboard() {
       const token = localStorage.getItem("token");
 
       const response = await axios.get(
-        "http://localhost:5000/api/profile",
+        "https://dsa-tracker-pixie15.vercel.app/api/profile",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -59,7 +59,7 @@ export default function Dashboard() {
 
         // Sync latest LeetCode data
         await axios.post(
-          "http://localhost:5000/api/snapshot/sync",
+          "https://dsa-tracker-pixie15.vercel.app/api/snapshot/sync",
           {},
           {
             headers: {
@@ -70,7 +70,7 @@ export default function Dashboard() {
 
         // Fetch latest snapshot
         const snapshotResponse = await axios.get(
-          "http://localhost:5000/api/snapshot/latest",
+          "https://dsa-tracker-pixie15.vercel.app/api/snapshot/latest",
           {
             headers: {
               Authorization: `Bearer ${token}`,

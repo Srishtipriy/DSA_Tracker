@@ -45,7 +45,7 @@ export default function ResetPasswordPage() {
       setLoading(true);
 
       const response = await axios.post(
-        `http://localhost:5000/api/auth/reset-password/${token}`,
+        `https://dsa-tracker-pixie15.vercel.app/api/auth/reset-password/${token}`,
         {
           password,
         }

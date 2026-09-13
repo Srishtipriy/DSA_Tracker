@@ -24,7 +24,7 @@ export default function Navbar() {
       setSyncing(true);
 
       await axios.post(
-        "http://localhost:5000/api/snapshot/sync",
+        "https://dsa-tracker-pixie15.vercel.app/api/snapshot/sync",
         {},
         {
           headers: {

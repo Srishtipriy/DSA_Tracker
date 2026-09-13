@@ -16,7 +16,7 @@ export default function AIInsights() {
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        "http://localhost:5000/api/ai",
+        "https://dsa-tracker-pixie15.vercel.app/api/ai",
         {
           headers: {
             Authorization: `Bearer ${token}`,

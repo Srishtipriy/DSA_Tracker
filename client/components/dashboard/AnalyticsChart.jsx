@@ -25,7 +25,7 @@ export default function AnalyticsChart() {
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        "http://localhost:5000/api/analytics/growth",
+        "https://dsa-tracker-pixie15.vercel.app/api/analytics/growth",
         {
           headers: {
             Authorization: `Bearer ${token}`,

@@ -30,7 +30,7 @@ export default function ProfileRegisterPage() {
 
     try {
       await axios.post(
-        "http://localhost:5000/api/auth/register",
+        "https://dsa-tracker-pixie15.vercel.app/api/auth/register",
         {
           ...signupData,
           leetcodeUrl,
