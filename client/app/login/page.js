@@ -23,7 +23,7 @@ export default function LoginPage() {
 
     try {
       const response = await axios.post(
-        "https://dsa-tracker-pixie15.vercel.app/api/auth/login",
+        "https://dsa-tracker-swart-seven.vercel.app/api/auth/login",
         {
           email,
           password,

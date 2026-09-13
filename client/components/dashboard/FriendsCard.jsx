@@ -25,7 +25,7 @@ export default function FriendsCard() {
   const fetchFriends = async () => {
     try {
       const res = await axios.get(
-        "https://dsa-tracker-pixie15.vercel.app/api/friends",
+        "https://dsa-tracker-swart-seven.vercel.app/api/friends",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -36,7 +36,7 @@ export default function FriendsCard() {
       const friendsWithStats = await Promise.all(
         res.data.map(async (friend) => {
           const statsRes = await axios.get(
-            `https://dsa-tracker-pixie15.vercel.app/api/leetcode/${friend.leetcodeUsername}`
+            `https://dsa-tracker-swart-seven.vercel.app/api/leetcode/${friend.leetcodeUsername}`
           );
 
           return {
@@ -59,7 +59,7 @@ export default function FriendsCard() {
 
     try {
       await axios.post(
-        "https://dsa-tracker-pixie15.vercel.app/api/friends/add",
+        "https://dsa-tracker-swart-seven.vercel.app/api/friends/add",
         {
           name,
           leetcodeUrl,
@@ -86,7 +86,7 @@ export default function FriendsCard() {
   const deleteFriend = async (id) => {
     try {
       await axios.delete(
-        `https://dsa-tracker-pixie15.vercel.app/api/friends/${id}`,
+        `https://dsa-tracker-swart-seven.vercel.app/api/friends/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -120,7 +120,7 @@ export default function FriendsCard() {
 
     try {
       await axios.put(
-        `https://dsa-tracker-pixie15.vercel.app/api/friends/${id}`,
+        `https://dsa-tracker-swart-seven.vercel.app/api/friends/${id}`,
         {
           name: editName,
         },

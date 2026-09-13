@@ -13,7 +13,7 @@ export default function TopicAnalysis() {
         const token = localStorage.getItem("token");
 
         const res = await axios.get(
-          "https://dsa-tracker-pixie15.vercel.app/api/topics",
+          "https://dsa-tracker-swart-seven.vercel.app/api/topics",
           {
             headers: {
               Authorization: `Bearer ${token}`,

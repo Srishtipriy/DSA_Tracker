@@ -22,7 +22,7 @@ export default function ForgotPasswordPage() {
 
     try {
       const response = await axios.post(
-        "https://dsa-tracker-pixie15.vercel.app/api/auth/forgot-password",
+        "https://dsa-tracker-swart-seven.vercel.app/api/auth/forgot-password",
         { email }
       );
 

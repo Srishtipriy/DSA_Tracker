@@ -20,7 +20,7 @@ export default function LeaderboardCard() {
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        "https://dsa-tracker-pixie15.vercel.app/api/analytics/leaderboard",
+        "https://dsa-tracker-swart-seven.vercel.app/api/analytics/leaderboard",
         {
           headers: {
             Authorization: `Bearer ${token}`,

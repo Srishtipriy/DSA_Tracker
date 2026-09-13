@@ -18,7 +18,7 @@ export default function Comparison() {
     const fetchData = async () => {
       try {
         const res = await axios.get(
-          "https://dsa-tracker-pixie15.vercel.app/api/comparison",
+          "https://dsa-tracker-swart-seven.vercel.app/api/comparison",
           {
             headers: {
               Authorization: `Bearer ${token}`,
