@@ -62,10 +62,10 @@ export default function AnalyticsChart() {
     "#16a34a",
     "#dc2626",
     "#0e99bc",
+    "#ee2af8",
     "#b4f717",
     "#9333ea",
     "#f8722a",
-    "#ee2af8",
   ];
 
   return (
